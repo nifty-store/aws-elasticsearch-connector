@@ -1,6 +1,6 @@
 {
   "name": "aws-opensearch-connector",
-  "version": "9.0.3",
+  "version": "0.0.1",
   "description": "A tiny Amazon Signature Version 4 connection class for @opensearch-project/opensearch, for compatibility with AWS OpenSearch and IAM authentication.",
   "repository": "https://github.com/nifty-store/aws-opensearch-connector",
   "bugs": "https://github.com/nifty-store/aws-opensearch-connector/issues",
@@ -24,12 +24,11 @@
   },
   "main": "src/index.js",
   "scripts": {
-    "publish": "git push origin --tags && npm run changelog && git push origin",
+    "publish": "git push origin --tags && git push origin",
     "release:pre": "npm version prerelease && npm publish --tag pre",
     "release:patch": "npm version patch && npm publish",
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && npm publish",
-    "changelog": "github_changelog_generator -u compwright -p aws-opensearch-connector && git add CHANGELOG.md && git commit -am \"Updating changelog\"",
     "lint": "standard src/*.js tests/*.js --fix",
     "pretest": "npm run lint",
     "test": "AWS_PROFILE=null nyc --all mocha tests/Amazon*.test.js",
