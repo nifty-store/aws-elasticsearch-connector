@@ -1,6 +1,6 @@
 {
   "name": "@nifty.store/aws-opensearch-connector",
-  "version": "9.0.0",
+  "version": "10.0.0",
   "description": "A tiny Amazon Signature Version 4 connection class for @opensearch-project/opensearch, for compatibility with AWS OpenSearch and IAM authentication.",
   "repository": "https://github.com/nifty-store/aws-opensearch-connector",
   "bugs": "https://github.com/nifty-store/aws-opensearch-connector/issues",
