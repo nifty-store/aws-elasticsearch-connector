@@ -1,7 +1,7 @@
 'use strict'
 
 const AWS = require('aws-sdk')
-const { Client } = require('@elastic/elasticsearch')
+const { Client } = require('@opensearch-project/opensearch')
 const argv = require('minimist')(process.argv.slice(2))
 
 const createAwsElasticsearchConnector = require('../src')
